@@ -1,34 +1,105 @@
-🪐 SWAPI Postman Testing
-📝 Sobre o Projeto
-Este repositório contém uma coleção do Postman focada em testes automatizados de API. O projeto foi desenvolvido para explorar a SWAPI (Star Wars API) exclusivamente através de requisições GET, consolidando conceitos essenciais de Quality Assurance (QA) e validação de dados em retornos JSON.
+# 🪐 SWAPI Postman Testing
 
-🚀 Funcionalidades e Testes Implementados
-O foco principal deste projeto foi a criação de requisições dinâmicas (utilizando Path Variables) e o desenvolvimento de scripts de testes automatizados abrangentes. As validações incluem:
+> Coleção de testes automatizados de API utilizando **Postman + JavaScript**, com foco em boas práticas de **Quality Assurance (QA)** e validação de respostas JSON.
 
-Status Code: Garantia de que a API responde com status 200 OK.
+---
 
-Estrutura de Dados: Verificação da presença de propriedades obrigatórias no corpo da resposta (ex: name, title, episode_id).
+## 📖 Sobre o projeto
 
-Type Checking: Validação de tipos de dados para garantir que a API está retornando exatamente o esperado (ex: verificando se episode_id é um number e director é uma string).
+Este repositório reúne uma **Collection do Postman** criada para praticar testes automatizados consumindo a **SWAPI (Star Wars API)**.
 
-Validação de Conteúdo: Testes para garantir que os campos obrigatórios não retornem vazios.
+O objetivo foi consolidar conceitos fundamentais de **testes de API**, trabalhando exclusivamente com requisições **GET** e desenvolvendo validações robustas para garantir a integridade dos dados retornados pela API.
 
-🛠️ Tecnologias Utilizadas
-Postman: Plataforma para estruturação das requisições e execução da Collection.
+### 🎯 Objetivos
 
-JavaScript: Linguagem utilizada para escrever os scripts de testes na aba Tests do Postman.
+* Praticar testes automatizados de API
+* Validar respostas HTTP e estrutura JSON
+* Utilizar **Path Variables** para requisições dinâmicas
+* Escrever testes reutilizáveis em **JavaScript**
 
-SWAPI: API RESTful pública utilizada como base de testes.
+---
 
-(Dica: Aqui você pode adicionar as tags dos Skill Icons de Postman e JavaScript, mantendo o mesmo padrão visual caprichado do seu perfil principal!)
+## 🚀 Testes implementados
 
-⚙️ Como executar este projeto
-Clone este repositório em sua máquina local.
+Cada endpoint possui validações automatizadas que garantem a qualidade da resposta da API.
 
-Abra o Postman e clique em Import.
+### ✅ Status Code
 
-Selecione o arquivo da Collection (formato .json) salvo neste repositório.
+Verifica se a requisição retorna corretamente:
 
-Abra as requisições importadas, insira um ID válido na aba de Path Variables e clique em Send.
+* **200 OK**
 
-Verifique a aba Test Results para visualizar as validações automatizadas passando.
+### 📦 Estrutura de dados
+
+Garante que propriedades obrigatórias estejam presentes no JSON, como:
+
+* `name`
+* `title`
+* `episode_id`
+
+### 🔍 Type Checking
+
+Valida o tipo de cada informação retornada, por exemplo:
+
+| Campo          | Tipo esperado |
+| -------------- | ------------- |
+| `episode_id`   | Number        |
+| `director`     | String        |
+| `release_date` | String        |
+
+### 🛡️ Validação de conteúdo
+
+Evita respostas incompletas verificando que campos obrigatórios:
+
+* Não sejam `null`
+* Não estejam vazios (`""`)
+* Possuam valores válidos
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+| Tecnologia     | Finalidade                        |
+| -------------- | --------------------------------- |
+| **Postman**    | Criação e execução da Collection  |
+| **JavaScript** | Scripts de testes automatizados   |
+| **SWAPI**      | API REST utilizada para os testes |
+
+---
+
+## ⚙️ Como executar
+
+1. Clone este repositório.
+2. Abra o **Postman**.
+3. Clique em **Import** e selecione a Collection (`.json`).
+4. Abra qualquer requisição e informe um **ID válido** nas **Path Variables**.
+5. Clique em **Send**.
+6. Confira os resultados na aba **Test Results**.
+
+---
+
+## 📂 Estrutura do projeto
+
+```text
+📦 swapi-postman-testing
+ ┣ 📜 SWAPI.postman_collection.json
+ ┗ 📜 README.md
+```
+
+---
+
+## 📚 Conceitos praticados
+
+* Testes de API REST
+* Validação de Status Code
+* Assertions com `pm.test()`
+* Path Variables
+* Estruturação de Collections
+* Quality Assurance (QA)
+
+---
+
+## ⭐ Resultado
+
+Este projeto demonstra a aplicação de **boas práticas em testes automatizados de APIs**, servindo como portfólio para estudos em **QA**, **Postman** e **automação de testes**.
+
