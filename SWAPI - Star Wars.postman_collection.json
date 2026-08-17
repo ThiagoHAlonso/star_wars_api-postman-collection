@@ -1,0 +1,1566 @@
+{
+  "info": {
+    "_postman_id": "12d062e9-3b83-4895-bee9-4146bfa8a3ad",
+    "name": "SWAPI - Star Wars",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53824340",
+    "_collection_link": "https://go.postman.co/collection/53824340-12d062e9-3b83-4895-bee9-4146bfa8a3ad?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Personagens",
+      "item": [
+        {
+          "name": "Luke Skywalker",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Character is Luke Skywalker\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response.name).to.eql(\"Luke Skywalker\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response contains required fields\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response).to.have.property(\"name\");\r",
+                  "    pm.expect(response).to.have.property(\"height\");\r",
+                  "    pm.expect(response).to.have.property(\"mass\");\r",
+                  "    pm.expect(response).to.have.property(\"gender\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://swapi.info/api/people/1/",
+              "protocol": "https",
+              "host": [
+                "swapi",
+                "info"
+              ],
+              "path": [
+                "api",
+                "people",
+                "1",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Darth Vader",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Character is Darth Vader\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response.name).to.eql(\"Darth Vader\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response contains required fields\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response).to.have.property(\"name\");\r",
+                  "    pm.expect(response).to.have.property(\"height\");\r",
+                  "    pm.expect(response).to.have.property(\"mass\");\r",
+                  "    pm.expect(response).to.have.property(\"gender\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://swapi.info/api/people/4/",
+              "protocol": "https",
+              "host": [
+                "swapi",
+                "info"
+              ],
+              "path": [
+                "api",
+                "people",
+                "4",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "C3P0",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Character is C3PO\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response.name).to.eql(\"C-3PO\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response contains required fields\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response).to.have.property(\"name\");\r",
+                  "    pm.expect(response).to.have.property(\"height\");\r",
+                  "    pm.expect(response).to.have.property(\"mass\");\r",
+                  "    pm.expect(response).to.have.property(\"gender\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://swapi.info/api/people/2/",
+              "protocol": "https",
+              "host": [
+                "swapi",
+                "info"
+              ],
+              "path": [
+                "api",
+                "people",
+                "2",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Anakin Skywalker",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Character is Anakin Skywalker\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response.name).to.eql(\"Anakin Skywalker\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response contains required fields\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response).to.have.property(\"name\");\r",
+                  "    pm.expect(response).to.have.property(\"height\");\r",
+                  "    pm.expect(response).to.have.property(\"mass\");\r",
+                  "    pm.expect(response).to.have.property(\"gender\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://swapi.info/api/people/11/",
+              "protocol": "https",
+              "host": [
+                "swapi",
+                "info"
+              ],
+              "path": [
+                "api",
+                "people",
+                "11",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Darth Maul",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Character is Darth Maul\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response.name).to.eql(\"Darth Maul\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response contains required fields\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response).to.have.property(\"name\");\r",
+                  "    pm.expect(response).to.have.property(\"height\");\r",
+                  "    pm.expect(response).to.have.property(\"mass\");\r",
+                  "    pm.expect(response).to.have.property(\"gender\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://swapi.info/api/people/44/",
+              "protocol": "https",
+              "host": [
+                "swapi",
+                "info"
+              ],
+              "path": [
+                "api",
+                "people",
+                "44",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Princesa Leia",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Character is Leia\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response.name).to.eql(\"Leia Organa\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response contains required fields\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response).to.have.property(\"name\");\r",
+                  "    pm.expect(response).to.have.property(\"height\");\r",
+                  "    pm.expect(response).to.have.property(\"mass\");\r",
+                  "    pm.expect(response).to.have.property(\"gender\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://swapi.info/api/people/5",
+              "protocol": "https",
+              "host": [
+                "swapi",
+                "info"
+              ],
+              "path": [
+                "api",
+                "people",
+                "5"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Han Solo",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Character is Han Solo\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response.name).to.eql(\"Han Solo\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response contains required fields\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response).to.have.property(\"name\");\r",
+                  "    pm.expect(response).to.have.property(\"height\");\r",
+                  "    pm.expect(response).to.have.property(\"mass\");\r",
+                  "    pm.expect(response).to.have.property(\"gender\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://swapi.info/api/people/14/",
+              "protocol": "https",
+              "host": [
+                "swapi",
+                "info"
+              ],
+              "path": [
+                "api",
+                "people",
+                "14",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "R2D2",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Character is R2D2\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response.name).to.eql(\"R2-D2\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response contains required fields\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response).to.have.property(\"name\");\r",
+                  "    pm.expect(response).to.have.property(\"height\");\r",
+                  "    pm.expect(response).to.have.property(\"mass\");\r",
+                  "    pm.expect(response).to.have.property(\"gender\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://swapi.info/api/people/3/",
+              "protocol": "https",
+              "host": [
+                "swapi",
+                "info"
+              ],
+              "path": [
+                "api",
+                "people",
+                "3",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Yoda",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Character is Yoda\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response.name).to.eql(\"Yoda\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response contains required fields\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response).to.have.property(\"name\");\r",
+                  "    pm.expect(response).to.have.property(\"height\");\r",
+                  "    pm.expect(response).to.have.property(\"mass\");\r",
+                  "    pm.expect(response).to.have.property(\"gender\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "https://swapi.info/api/people/20/",
+              "protocol": "https",
+              "host": [
+                "swapi",
+                "info"
+              ],
+              "path": [
+                "api",
+                "people",
+                "20",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Boba Fett",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Character is Boba Fett\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response.name).to.eql(\"Boba Fett\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response contains required fields\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response).to.have.property(\"name\");\r",
+                  "    pm.expect(response).to.have.property(\"height\");\r",
+                  "    pm.expect(response).to.have.property(\"mass\");\r",
+                  "    pm.expect(response).to.have.property(\"gender\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://swapi.info/api/people/22/",
+              "protocol": "https",
+              "host": [
+                "swapi",
+                "info"
+              ],
+              "path": [
+                "api",
+                "people",
+                "22",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Buscar Personagem",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "// 1. O teste de status continua igual\r",
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "// 2. Unificamos as validações para garantir que os campos existem E são textos (strings)\r",
+                  "pm.test(\"Response contains required fields with correct data types\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    // Verifica se a propriedade existe E se é do tipo string\r",
+                  "    pm.expect(response).to.have.property(\"name\").that.is.a(\"string\");\r",
+                  "    pm.expect(response).to.have.property(\"height\").that.is.a(\"string\"); \r",
+                  "    pm.expect(response).to.have.property(\"mass\").that.is.a(\"string\");\r",
+                  "    pm.expect(response).to.have.property(\"gender\").that.is.a(\"string\");\r",
+                  "    \r",
+                  "    // Bônus: Garantir que o nome não venha em branco\r",
+                  "    pm.expect(response.name).to.not.be.empty;\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://swapi.info/api/people/:id",
+              "protocol": "https",
+              "host": [
+                "swapi",
+                "info"
+              ],
+              "path": [
+                "api",
+                "people",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "66"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Planetas",
+      "item": [
+        {
+          "name": "Tatooine",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Planet is Tatooine\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response.name).to.eql(\"Tatooine\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response contains required fields\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response).to.have.property(\"name\");\r",
+                  "    pm.expect(response).to.have.property(\"rotation_period\");\r",
+                  "    pm.expect(response).to.have.property(\"orbital_period\");\r",
+                  "    pm.expect(response).to.have.property(\"climate\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://swapi.info/api/planets/1",
+              "protocol": "https",
+              "host": [
+                "swapi",
+                "info"
+              ],
+              "path": [
+                "api",
+                "planets",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Naboo",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Planet is Naboo\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response.name).to.eql(\"Naboo\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response contains required fields\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response).to.have.property(\"name\");\r",
+                  "    pm.expect(response).to.have.property(\"rotation_period\");\r",
+                  "    pm.expect(response).to.have.property(\"orbital_period\");\r",
+                  "    pm.expect(response).to.have.property(\"climate\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://swapi.info/api/planets/8",
+              "protocol": "https",
+              "host": [
+                "swapi",
+                "info"
+              ],
+              "path": [
+                "api",
+                "planets",
+                "8"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Felucia",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Planet is Felucia\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response.name).to.eql(\"Felucia\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response contains required fields\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response).to.have.property(\"name\");\r",
+                  "    pm.expect(response).to.have.property(\"rotation_period\");\r",
+                  "    pm.expect(response).to.have.property(\"orbital_period\");\r",
+                  "    pm.expect(response).to.have.property(\"climate\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://swapi.info/api/planets/17",
+              "protocol": "https",
+              "host": [
+                "swapi",
+                "info"
+              ],
+              "path": [
+                "api",
+                "planets",
+                "17"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Geonosis",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Planet is Geonosis\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response.name).to.eql(\"Geonosis\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response contains required fields\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response).to.have.property(\"name\");\r",
+                  "    pm.expect(response).to.have.property(\"rotation_period\");\r",
+                  "    pm.expect(response).to.have.property(\"orbital_period\");\r",
+                  "    pm.expect(response).to.have.property(\"climate\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://swapi.info/api/planets/11",
+              "protocol": "https",
+              "host": [
+                "swapi",
+                "info"
+              ],
+              "path": [
+                "api",
+                "planets",
+                "11"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Alderaan",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Planet is Alderaan\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response.name).to.eql(\"Alderaan\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response contains required fields\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response).to.have.property(\"name\");\r",
+                  "    pm.expect(response).to.have.property(\"rotation_period\");\r",
+                  "    pm.expect(response).to.have.property(\"orbital_period\");\r",
+                  "    pm.expect(response).to.have.property(\"climate\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://swapi.info/api/planets/2",
+              "protocol": "https",
+              "host": [
+                "swapi",
+                "info"
+              ],
+              "path": [
+                "api",
+                "planets",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Buscar Planeta",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Espécies",
+      "item": [
+        {
+          "name": "Humano",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"The Species is Human\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response.name).to.eql(\"Human\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response contains required fields\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response).to.have.property(\"name\");\r",
+                  "    pm.expect(response).to.have.property(\"skin_colors\");\r",
+                  "    pm.expect(response).to.have.property(\"hair_colors\");\r",
+                  "    pm.expect(response).to.have.property(\"language\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://swapi.info/api/species/1",
+              "protocol": "https",
+              "host": [
+                "swapi",
+                "info"
+              ],
+              "path": [
+                "api",
+                "species",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Droid",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"The Species is Droid\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response.name).to.eql(\"Droid\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response contains required fields\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response).to.have.property(\"name\");\r",
+                  "    pm.expect(response).to.have.property(\"skin_colors\");\r",
+                  "    pm.expect(response).to.have.property(\"hair_colors\");\r",
+                  "    pm.expect(response).to.have.property(\"language\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://swapi.info/api/species/2",
+              "protocol": "https",
+              "host": [
+                "swapi",
+                "info"
+              ],
+              "path": [
+                "api",
+                "species",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Espécie de Yoda",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"The Species is Yoda's species\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response.name).to.eql(\"Yoda's species\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response contains required fields\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response).to.have.property(\"name\");\r",
+                  "    pm.expect(response).to.have.property(\"skin_colors\");\r",
+                  "    pm.expect(response).to.have.property(\"hair_colors\");\r",
+                  "    pm.expect(response).to.have.property(\"language\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://swapi.info/api/species/6",
+              "protocol": "https",
+              "host": [
+                "swapi",
+                "info"
+              ],
+              "path": [
+                "api",
+                "species",
+                "6"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Buscar Espécie",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Veículos",
+      "item": [
+        {
+          "name": "Sand Crawler",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"The Vehicles is Sand Crawler\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response.name).to.eql(\"Sand Crawler\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response contains required fields\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response).to.have.property(\"name\");\r",
+                  "    pm.expect(response).to.have.property(\"model\");\r",
+                  "    pm.expect(response).to.have.property(\"manufacturer\");\r",
+                  "    pm.expect(response).to.have.property(\"cost_in_credits\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://swapi.info/api/vehicles/4",
+              "protocol": "https",
+              "host": [
+                "swapi",
+                "info"
+              ],
+              "path": [
+                "api",
+                "vehicles",
+                "4"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Snowspeeder",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"The Vehicles is Snowspeeder\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response.name).to.eql(\"Snowspeeder\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response contains required fields\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response).to.have.property(\"name\");\r",
+                  "    pm.expect(response).to.have.property(\"model\");\r",
+                  "    pm.expect(response).to.have.property(\"manufacturer\");\r",
+                  "    pm.expect(response).to.have.property(\"cost_in_credits\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://swapi.info/api/vehicles/14",
+              "protocol": "https",
+              "host": [
+                "swapi",
+                "info"
+              ],
+              "path": [
+                "api",
+                "vehicles",
+                "14"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "T-16 Skyhopper",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"The Vehicles is T-16 Skyhopper\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response.name).to.eql(\"T-16 skyhopper\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response contains required fields\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response).to.have.property(\"name\");\r",
+                  "    pm.expect(response).to.have.property(\"model\");\r",
+                  "    pm.expect(response).to.have.property(\"manufacturer\");\r",
+                  "    pm.expect(response).to.have.property(\"cost_in_credits\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://swapi.info/api/vehicles/6",
+              "protocol": "https",
+              "host": [
+                "swapi",
+                "info"
+              ],
+              "path": [
+                "api",
+                "vehicles",
+                "6"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Buscar Veículos",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Naves Estelares",
+      "item": [
+        {
+          "name": "Millernium Falcon",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"The Starships is Millennium Falcon\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response.name).to.eql(\"Millennium Falcon\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response contains required fields\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response).to.have.property(\"name\");\r",
+                  "    pm.expect(response).to.have.property(\"model\");\r",
+                  "    pm.expect(response).to.have.property(\"manufacturer\");\r",
+                  "    pm.expect(response).to.have.property(\"cost_in_credits\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://swapi.info/api/starships/10",
+              "protocol": "https",
+              "host": [
+                "swapi",
+                "info"
+              ],
+              "path": [
+                "api",
+                "starships",
+                "10"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Estrela da Morte",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"The Starships is Star Destroyer\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response.name).to.eql(\"Star Destroyer\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response contains required fields\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response).to.have.property(\"name\");\r",
+                  "    pm.expect(response).to.have.property(\"model\");\r",
+                  "    pm.expect(response).to.have.property(\"manufacturer\");\r",
+                  "    pm.expect(response).to.have.property(\"cost_in_credits\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://swapi.info/api/starships/3",
+              "protocol": "https",
+              "host": [
+                "swapi",
+                "info"
+              ],
+              "path": [
+                "api",
+                "starships",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Caça estelar",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"The Starships is Belbullab-22 starfighter\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response.name).to.eql(\"Belbullab-22 starfighter\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response contains required fields\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response).to.have.property(\"name\");\r",
+                  "    pm.expect(response).to.have.property(\"model\");\r",
+                  "    pm.expect(response).to.have.property(\"manufacturer\");\r",
+                  "    pm.expect(response).to.have.property(\"cost_in_credits\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://swapi.info/api/starships/74",
+              "protocol": "https",
+              "host": [
+                "swapi",
+                "info"
+              ],
+              "path": [
+                "api",
+                "starships",
+                "74"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Buscar Nave",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Filmes",
+      "item": [
+        {
+          "name": "Nova esperança",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"The film title is A New Hope\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "pm.expect(response.title).to.eql(\"A New Hope\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response contains required fields\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response).to.have.property(\"title\");\r",
+                  "    pm.expect(response).to.have.property(\"episode_id\");\r",
+                  "    pm.expect(response).to.have.property(\"opening_crawl\");\r",
+                  "    pm.expect(response).to.have.property(\"director\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://swapi.info/api/films/1",
+              "protocol": "https",
+              "host": [
+                "swapi",
+                "info"
+              ],
+              "path": [
+                "api",
+                "films",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Retorno de Jedi",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"The film title is Return od the Jedi\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "pm.expect(response.title).to.eql(\"Return of the Jedi\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response contains required fields\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response).to.have.property(\"title\");\r",
+                  "    pm.expect(response).to.have.property(\"episode_id\");\r",
+                  "    pm.expect(response).to.have.property(\"opening_crawl\");\r",
+                  "    pm.expect(response).to.have.property(\"director\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://swapi.info/api/films/3",
+              "protocol": "https",
+              "host": [
+                "swapi",
+                "info"
+              ],
+              "path": [
+                "api",
+                "films",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "A Vingança dos Sith",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"The film title is Revenge of the Sith\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "pm.expect(response.title).to.eql(\"Revenge of the Sith\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response contains required fields\", function () {\r",
+                  "    const response = pm.response.json();\r",
+                  "\r",
+                  "    pm.expect(response).to.have.property(\"title\");\r",
+                  "    pm.expect(response).to.have.property(\"episode_id\");\r",
+                  "    pm.expect(response).to.have.property(\"opening_crawl\");\r",
+                  "    pm.expect(response).to.have.property(\"director\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://swapi.info/api/films/6",
+              "protocol": "https",
+              "host": [
+                "swapi",
+                "info"
+              ],
+              "path": [
+                "api",
+                "films",
+                "6"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Buscar Filme",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
